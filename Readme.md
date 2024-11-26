@@ -10,3 +10,12 @@
    ```bash
    cd DevToDo
    ```
+3. **Use Docker to Run The Database Through:**
+   ```bash
+   docker compose up -d
+   ```
+4. **Create and configure the `.env` file:**
+   ```bash
+   cp .env.example .env
+   ```
+   Edit the `.env` file to match your configuration.
