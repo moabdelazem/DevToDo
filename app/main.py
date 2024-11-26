@@ -1,9 +1,12 @@
 from typing import Union
 from fastapi import FastAPI, HTTPException
 from pymongo.mongo_client import MongoClient
+from routes.routes import router
 import os
 
 app = FastAPI()
+
+app.include_router(router)
 
 uri = os.environ.get("MONGO_URI")
 client = MongoClient(uri)
